@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SITTA-UT – Sistem Informasi Tiras & Transaksi Bahan Ajar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hero {
+      min-height: calc(100vh - 60px);
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #0057B8 0%, #003D8F 60%, #001F5B 100%);
+      padding: 40px 20px;
+    }
+    .hero-inner { text-align: center; max-width: 600px; }
+    .hero-logo {
+      font-size: 3.5rem; font-weight: 800;
+      color: #fff; letter-spacing: -2px;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .hero-logo span { color: #FFD700; }
+    .hero-sub {
+      color: rgba(255,255,255,.7);
+      font-size: 1rem; margin-bottom: 36px;
+      font-weight: 500;
+    }
+    .menu-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      margin-top: 12px;
+    }
+    .menu-card {
+      background: rgba(255,255,255,.1);
+      border: 1.5px solid rgba(255,255,255,.2);
+      border-radius: 16px; padding: 28px 20px;
+      text-decoration: none; color: #fff;
+      transition: all .25s;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+    }
+    .menu-card:hover {
+      background: rgba(255,255,255,.2);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.3);
+    }
+    .menu-card .icon { font-size: 2.2rem; }
+    .menu-card h2 { font-size: 1rem; font-weight: 800; }
+    .menu-card p { font-size: .8rem; opacity: .7; }
+    @media (max-width: 480px) { .menu-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">📦 <span>SITTA</span>-UT</a>
+    <div class="navbar-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="stok.html">Stok Bahan Ajar</a>
+      <a href="tracking.html">Tracking DO</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-logo">📦 <span>SITTA</span>-UT</div>
+      <p class="hero-sub">Sistem Informasi Tiras &amp; Transaksi Bahan Ajar<br/>Universitas Terbuka</p>
+      <div class="menu-grid">
+        <a href="stok.html" class="menu-card">
+          <span class="icon">📚</span>
+          <h2>Stok Bahan Ajar</h2>
+          <p>Kelola &amp; pantau stok seluruh UT-Daerah</p>
+        </a>
+        <a href="tracking.html" class="menu-card">
+          <span class="icon">🚚</span>
+          <h2>Tracking DO</h2>
+          <p>Lacak status Delivery Order bahan ajar</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
